@@ -180,14 +180,38 @@ nav .logo {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the start */
+    align-items: center;
     background-color: rgb(44, 43, 43); 
     color: rgb(219, 219, 219);
     width: 300px;
-    min-height: 200px;
+    min-height: 250px;
     padding: 20px;
     border-radius: 5px;
     margin: 0px 5px;
+    text-align: center;
 }
+
+.card i {
+    font-size: 28px;
+    height: 30px; 
+    line-height: 40px; 
+}
+
+.card h1 {
+    margin-top: 10px;
+    font-size: 24px;
+    flex: 1; 
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 16px;
+    flex: 1;
+}
+
 
 .sidebar {
     position: fixed;
