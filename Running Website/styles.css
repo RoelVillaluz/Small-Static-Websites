@@ -43,6 +43,7 @@ nav .buttons {
 nav .buttons > * {
     padding: 8px 20px;
     border-radius: 30px;
+    cursor: pointer;
 }
 
 nav .buttons .sign-in {
@@ -112,24 +113,55 @@ nav .buttons .register {
     justify-content: space-between;
     align-items: start;
     width: 100%;
-    height: 900px;
+    height: 400px;
+    margin-top: 60px;
+    padding: 20px;
 }
 
 .choose-us .left,
 .choose-us .right {
     flex: 1;
+    height: 100%;
+}
+
+.choose-us .right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .choose-us .right h1 {
+    font-family: "Permanent Marker", cursive;
     color: rgb(20, 20, 20);
     font-size: 64px;
     text-shadow: 
         -1px -1px 0 white,  
-         1px -1px 0 white,
+            1px -1px 0 white,
         -1px  1px 0 white,
-         1px  1px 0 white;
+            1px  1px 0 white;
 }
 
+.choose-us .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    color: rgb(223, 223, 223);
+    padding: 20px;
+}
+
+.choose-us .grid .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 100px;
+}
+
+.item i {
+    font-size: 24px;
+}
 
 .community {
     background-color: rgb(20, 20, 20, 0); 
